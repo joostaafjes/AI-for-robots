@@ -146,10 +146,11 @@ def kalman_filter(x, P):
     for n in range(len(measurements)):
 
         # measurement update
-        y = measurements[n] - (H * x).value[0][0]
+        Z = matrix([[measurements[n]]])
+        y = Z - (H * x)
         S = H * P * H.transpose() + R
         K = P * H.transpose() * S.inverse()
-        x = x + matrix([[K.value[0][0] * y], [K.value[1][0] * y]])
+        x = x + K * y
         P = (I - K * H) * P
 
         # prediction
