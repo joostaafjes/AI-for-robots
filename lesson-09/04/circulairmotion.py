@@ -100,6 +100,12 @@ class robot:
         steering_angle = motion[0]
         distance = motion[1]
 
+        if steering_angle > max_steering_angle:
+            raise ValueError('Max steering angle exceeded')
+
+        if distance < 0:
+            raise ValueError('Cannot move backwards')
+
         turning_angle = distance / self.length * tan(steering_angle)
 
         if turning_angle >= 0.001:
