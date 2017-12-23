@@ -100,7 +100,7 @@ class robot:
         steering_angle = motion[0]
         distance = motion[1]
 
-        if steering_angle > max_steering_angle:
+        if abs(steering_angle) > max_steering_angle:
             raise ValueError('Max steering angle exceeded')
 
         if distance < 0:
