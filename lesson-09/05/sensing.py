@@ -100,7 +100,7 @@ class robot:
         for i in range(len(landmarks)):
             dy = landmarks[i][0] - self.y
             dx = landmarks[i][1] - self.x
-            # measure angel
+            # measure angle
             angle = atan2(dy, dx) % (2 * pi)
             # subtract
             Z.append(angle - self.orientation)
