@@ -1,4 +1,4 @@
-from expansion_grid import search, get_list_from_node, extend_list
+from expansion_grid import search
 
 def test_1():
     # Grid format:
@@ -91,4 +91,28 @@ def test_6():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print('-------------------------------------')
+    expand = search(grid, init, goal, cost)
+
+    for row in expand:
+        print row
+
+def test_7():
+    # Grid format:
+    #   0 = Navigable space
+    #   1 = Occupied space
+
+    grid = [[0, 1, 1, 1, 1],
+            [0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0],
+            [1, 1, 1, 1, 0],
+            [0, 0, 0, 1, 0]]
+    init = [0, 0]
+    goal = [len(grid)-1, len(grid[0])-1]
+    cost = 1
+
+    print('-------------------------------------')
+    expand = search(grid, init, goal, cost)
+
+    for row in expand:
+        print row
