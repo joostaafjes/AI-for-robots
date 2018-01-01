@@ -60,7 +60,7 @@ def get_list_from_node(current_node, grid, g, cost, expand, increment):
         increment += 1
         expand[new_y][new_x] = increment
         new_list.append([g + cost, new_y, new_x])
-        grid[y][x] = 1
+    grid[y][x] = 1
 
     return new_list, expand, increment
 
