@@ -33,11 +33,17 @@ def test_1():
                    [0.194460, 5.660382, 4.761072, 2.471682],
                    [5.717342, 4.736780, 3.909599, 2.342536]]
 
-    result = particle_filter(motions, measurements)
 
-    assert result[0] == approx(93.476, rel=1e-1)
-    assert result[1] == approx(75.186, rel=1e-1)
-    assert result[2] == approx(5.2664, rel=1e-1)
+    # according to Sebastian about 80% of the solution should be valid ( a little vague but anyhow....)
+    error_cnt = 0
+    for i in range(5):
+        result = particle_filter(motions, measurements)
+        if result[0] != approx(93.476, rel=1e-1) or \
+           result[1] != approx(75.186, rel=1e-1) or \
+           result[2] != approx(5.2664, rel=1e-1):
+            error_cnt += 1
+
+    assert error_cnt <= 1
 
 ## 2) You can generate your own test cases by generating
 ##    measurements using the generate_ground_truth function.
