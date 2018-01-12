@@ -14,7 +14,7 @@ def test_1():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print(search(grid, init, goal, cost))
 
 def test_2():
     # Grid format:

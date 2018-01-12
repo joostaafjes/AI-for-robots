@@ -21,4 +21,4 @@ def sense(p, Z):
 
    return q
 
-print sense(p,Z)
+print(sense(p,Z))
