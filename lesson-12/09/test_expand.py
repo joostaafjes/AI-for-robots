@@ -30,7 +30,7 @@ def test_2():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print(search(grid, init, goal, cost))
 
 def test_3():
     # Grid format:
@@ -46,7 +46,7 @@ def test_3():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print(search(grid, init, goal, cost))
 
 def test_4():
     # Grid format:
@@ -59,7 +59,7 @@ def test_4():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print(search(grid, init, goal, cost))
 
 def test_5():
     # Grid format:
@@ -75,7 +75,7 @@ def test_5():
     goal = [len(grid)-1, len(grid[0])-1]
     cost = 1
 
-    print search(grid, init, goal, cost)
+    print(search(grid, init, goal, cost))
 
 def test_6():
     # Grid format:
@@ -95,7 +95,7 @@ def test_6():
     expand = search(grid, init, goal, cost)
 
     for row in expand:
-        print row
+        print(row)
 
 def test_7():
     # Grid format:
@@ -115,4 +115,4 @@ def test_7():
     expand = search(grid, init, goal, cost)
 
     for row in expand:
-        print row
+        print(row)

@@ -120,7 +120,7 @@ for i in range(N):
 p3 = []
 
 
-print w  # Please print w for grading purposes.
+print(w)  # Please print w for grading purposes.
 
 
 

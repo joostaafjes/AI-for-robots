@@ -24,7 +24,7 @@ def test_1():
                       [' ', ' ', ' ', ' ', ' ', '*']]
 
     for row in expand:
-        print row
+        print(row)
     print('--------------------------------------------')
 
 def test_2():
@@ -49,7 +49,7 @@ def test_2():
                       [' ', ' ', ' ', ' ', ' ', 'v'],
                       [' ', ' ', ' ', ' ', ' ', '*']]
     for row in expand:
-        print row
+        print(row)
     print('--------------------------------------------')
 
 def test_3():
@@ -74,7 +74,7 @@ def test_3():
                       ['v', ' ', ' ', '^', ' ', 'v'],
                       ['>', '>', '>', '^', ' ', '*']]
     for row in expand:
-        print row
+        print(row)
     print('--------------------------------------------')
 
 def test_4():
@@ -93,7 +93,7 @@ def test_4():
     assert expand == [['v', ' '],
                       ['>', '*']]
     for row in expand:
-        print row
+        print(row)
     print('--------------------------------------------')
 
 def test_5():
@@ -118,5 +118,5 @@ def test_5():
                       [' ', ' ', ' ', ' ', ' ', 'v'],
                       [' ', ' ', ' ', ' ', ' ', '*']]
     for row in expand:
-        print row
+        print(row)
     print('--------------------------------------------')

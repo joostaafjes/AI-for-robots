@@ -15,7 +15,7 @@ def test_1():
 
     print('--------------------------------------------')
     for row in policy:
-        print row
+        print(row)
     print('--------------------------------------------')
 
     assert policy == [['v', ' ', 'v', 'v', 'v', 'v'],
@@ -39,7 +39,7 @@ def test_2():
 
     print('--------------------------------------------')
     for row in policy:
-        print row
+        print(row)
     print('--------------------------------------------')
 
     assert policy == [['v', 'v', ' ', 'v', 'v', 'v'],
@@ -63,7 +63,7 @@ def test_fail():
 
     print('--------------------------------------------')
     for row in policy:
-        print row
+        print(row)
     print('--------------------------------------------')
 
     assert policy == [[' ', ' ', ' ', ' ', 'v', 'v'],

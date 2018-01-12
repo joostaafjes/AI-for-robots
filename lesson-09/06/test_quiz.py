@@ -59,10 +59,10 @@ def test_2():
     measurements = x[1]
     estimated_position = particle_filter(motions, measurements)
     print_measurements(measurements)
-    print 'Ground truth:    ', final_robot
-    print 'Particle filter: ', estimated_position
+    print('Ground truth:    ', final_robot)
+    print('Particle filter: ', estimated_position)
     result = check_output(final_robot, estimated_position)
-    print 'Code check:      ', result
+    print('Code check:      ', result)
 
 
 

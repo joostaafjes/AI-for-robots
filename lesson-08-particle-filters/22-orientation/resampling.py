@@ -128,7 +128,7 @@ for T in range(T):
         p3.append(p[index])
     p = p3
 
-print p  # Leave this print statement for grading purposes!
+print(p)  # Leave this print statement for grading purposes!
 
 for i in range(len(p)):
     print(p[i])

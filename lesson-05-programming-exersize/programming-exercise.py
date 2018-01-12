@@ -40,8 +40,8 @@ class matrix:
 
     def show(self):
         for i in range(self.dimx):
-            print self.value[i]
-        print ' '
+            print(self.value[i])
+        print(' ')
 
     def __add__(self, other):
         # check if correct dimensions
@@ -158,9 +158,9 @@ def filter(x, P):
         x = x + (K * y)
         P = (I - (K * H)) * P
 
-    print 'x= '
+    print('x= ')
     x.show()
-    print 'P= '
+    print('P= ')
     P.show()
 
     return [x, P]
@@ -168,7 +168,7 @@ def filter(x, P):
 
 ########################################
 
-print "### 4-dimensional example ###"
+print("### 4-dimensional example ###")
 
 # measurements = [[5., 10.], [6., 8.], [7., 6.], [8., 4.], [9., 2.], [10., 0.]]
 # initial_xy = [4., 12.]

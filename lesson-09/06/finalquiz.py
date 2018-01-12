@@ -247,13 +247,13 @@ def generate_ground_truth(motions):
 def print_measurements(Z):
     T = len(Z)
 
-    print 'measurements = [[%.8s, %.8s, %.8s, %.8s],' % \
-          (str(Z[0][0]), str(Z[0][1]), str(Z[0][2]), str(Z[0][3]))
+    print('measurements = [[%.8s, %.8s, %.8s, %.8s],' % \
+          (str(Z[0][0]), str(Z[0][1]), str(Z[0][2]), str(Z[0][3])))
     for t in range(1, T - 1):
-        print '                [%.8s, %.8s, %.8s, %.8s],' % \
-              (str(Z[t][0]), str(Z[t][1]), str(Z[t][2]), str(Z[t][3]))
-    print '                [%.8s, %.8s, %.8s, %.8s]]' % \
-          (str(Z[T - 1][0]), str(Z[T - 1][1]), str(Z[T - 1][2]), str(Z[T - 1][3]))
+        print('                [%.8s, %.8s, %.8s, %.8s],' % \
+              (str(Z[t][0]), str(Z[t][1]), str(Z[t][2]), str(Z[t][3])))
+    print('                [%.8s, %.8s, %.8s, %.8s]]' % \
+          (str(Z[T - 1][0]), str(Z[T - 1][1]), str(Z[T - 1][2]), str(Z[T - 1][3])))
 
 
 # --------
